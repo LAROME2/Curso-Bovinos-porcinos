@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no"
+    />
+    <title>Módulo 3: Notification | CVA - Centro Virtual de Aprendizaje</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../../assets/images/logo/favicon.png" />
+
+    <!-- plugins css -->
+    <link
+      rel="stylesheet"
+      href="../../assets/vendors/bootstrap/dist/css/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../assets/vendors/PACE/themes/blue/pace-theme-minimal.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../assets/vendors/perfect-scrollbar/css/perfect-scrollbar.min.css"
+    />
+
+    <!-- page plugins css -->
+
+    <!-- core css -->
+    <link href="../../assets/css/ei-icon.css" rel="stylesheet" />
+    <link href="../../assets/css/themify-icons.css" rel="stylesheet" />
+    <link href="../../assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../../assets/css/animate.min.css" rel="stylesheet" />
+    <link href="../../assets/css/app.css" rel="stylesheet" />
+    <link href="../../assets/css/progress.css" rel="stylesheet" />
+    <link href="../../assets/css/progress-circle.css" rel="stylesheet" />
+  </head>
+
+  <body class="header-info side-nav-dark">
+    <div class="app">
+      <div class="layout">
+        <!-- Side Nav START -->
+        <div class="side-nav" id="sideNav"></div>
+        <!-- Side Nav END -->
+
+        <!-- Page Container START -->
+        <div class="page-container">
+          <!-- Header START -->
+          <div class="header navbar"></div>
+          <!-- Header END -->
+
+          <!-- theme configurator START -->
+          <div class="theme-configurator">
+            <div class="configurator-wrapper">
+              <div class="config-header">
+                <h4 class="config-title">Config Panel</h4>
+                <button class="config-close">
+                  <i class="ti-close"></i>
+                </button>
+              </div>
+              <div class="config-body">
+                <div class="mrg-btm-30">
+                  <p class="lead font-weight-normal">Header Color</p>
+                  <div class="theme-colors header-default">
+                    <input type="radio" id="header-default" name="theme" />
+                    <label for="header-default"></label>
+                  </div>
+                  <div class="theme-colors header-primary">
+                    <input
+                      type="radio"
+                      class="primary"
+                      id="header-primary"
+                      name="theme"
+                    />
+                    <label for="header-primary"></label>
+                  </div>
+                  <div class="theme-colors header-info">
+                    <input type="radio" id="header-info" name="theme" />
+                    <label for="header-info"></label>
+                  </div>
+                  <div class="theme-colors header-success">
+                    <input type="radio" id="header-success" name="theme" />
+                    <label for="header-success"></label>
+                  </div>
+                  <div class="theme-colors header-danger">
+                    <input type="radio" id="header-danger" name="theme" />
+                    <label for="header-danger"></label>
+                  </div>
+                  <div class="theme-colors header-dark">
+                    <input type="radio" id="header-dark" name="theme" />
+                    <label for="header-dark"></label>
+                  </div>
+                </div>
+                <div class="mrg-btm-30">
+                  <p class="lead font-weight-normal">Sidebar Color</p>
+                  <div class="theme-colors sidenav-default">
+                    <input type="radio" id="sidenav-default" name="sidenav" />
+                    <label for="sidenav-default"></label>
+                  </div>
+                  <div class="theme-colors side-nav-dark">
+                    <input type="radio" id="side-nav-dark" name="sidenav" />
+                    <label for="side-nav-dark"></label>
+                  </div>
+                </div>
+                <div class="mrg-btm-30">
+                  <p class="lead font-weight-normal no-mrg-btm">RTL</p>
+                  <div
+                    class="toggle-checkbox checkbox-inline toggle-sm mrg-top-10"
+                  >
+                    <input type="checkbox" name="rtl-toogle" id="rtl-toogle" />
+                    <label for="rtl-toogle"></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- theme configurator END -->
+
+          <!-- Theme Toggle Button START -->
+          <button class="theme-toggle btn btn-rounded btn-icon">
+            <i class="ti-palette"></i>
+          </button>
+          <!-- Theme Toggle Button END -->
+          <!-- Content Wrapper START -->
+          <div class="main-content">
+            <div class="container-fluid">
+              <div class="page-title">
+                <h4>Notification</h4>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="card">
+                    <div class="card-block">
+                      <h4 class="card-title">Noty</h4>
+                      <p class="width-90 mrg-btm-30">
+                        NOTY is a notification library that makes it easy to
+                        create alert - success - error - warning - information -
+                        confirmation messages as an alternative the standard
+                        alert dialog.
+                      </p>
+                      <div class="row">
+                        <div class="col-md-7">
+                          <div class="mrg-btm-20">
+                            <label for="noty-messenger-type">Type</label>
+                            <select
+                              id="noty-messenger-type"
+                              class="noty-selectize-config"
+                            >
+                              <option value="Information">Information</option>
+                              <option value="Success">Success</option>
+                              <option value="Error">Error</option>
+                              <option value="Warning">Warning</option>
+                              <option value="Confirm">Confirm</option>
+                            </select>
+                          </div>
+                          <div class="mrg-btm-20">
+                            <label for="noty-position">Position</label>
+                            <select
+                              id="noty-position"
+                              class="noty-selectize-config"
+                            >
+                              <option value="topRight">Top Right</option>
+                              <option value="top">Top</option>
+                              <option value="topLeft">Top Left</option>
+                              <option value="bottomLeft">Bottom Left</option>
+                              <option value="bottom">Bottom</option>
+                              <option value="bottomRight">Bottom Right</option>
+                            </select>
+                          </div>
+                          <div class="mrg-btm-20">
+                            <label class="control-label" for="noty-message"
+                              >Message</label
+                            >
+                            <textarea
+                              class="form-control"
+                              id="noty-message"
+                              rows="2"
+                              placeholder="Type your message ..."
+                            ></textarea>
+                            <div class="mrg-top-20">
+                              <button class="btn btn-primary show-noty">
+                                <span>Trigger</span>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card">
+                    <div class="card-block">
+                      <h4 class="card-title">Sweet Alert</h4>
+                      <p>
+                        Sweetalert is a beautiful replacement for JavaScript
+                        "alert"
+                      </p>
+                      <p>
+                        SweetAlert automatically centers itself on the page and
+                        looks great no matter if you're using a desktop
+                        computer, mobile or tablet. It's even highly
+                        customizeable, as you can see below!
+                      </p>
+                      <div class="mrg-top-20 mrg-btm-30">
+                        <button class="btn btn-default btn-rounded swal-simple">
+                          Simple Message
+                        </button>
+                        <button
+                          class="btn btn-primary btn-rounded swal-with-text"
+                        >
+                          With Text
+                        </button>
+                        <button
+                          class="btn btn-success btn-rounded swal-success"
+                        >
+                          Success Message
+                        </button>
+                      </div>
+                      <h5>With Function</h5>
+                      <p>
+                        A warning message, with a function attached to the
+                        "Confirm"-button
+                      </p>
+                      <div class="mrg-top-20 mrg-btm-30">
+                        <button
+                          class="btn btn-warning btn-rounded swal-function"
+                        >
+                          Try Me
+                        </button>
+                      </div>
+                      <h5>Passing a Parameter</h5>
+                      <p>you can execute something else for "Cancel".</p>
+                      <div class="mrg-top-20 mrg-btm-30">
+                        <button
+                          class="btn btn-danger btn-rounded swal-pass-param"
+                        >
+                          Try Me
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Botones de avance entre páginas-->
+              <div class="row mrg-btm-20">
+                <div class="col text-center">
+                  <div class="btn-group"></div>
+                </div>
+              </div>
+              <!--Widgets de avance de módulo y general-->
+              <div class="card widget-feed">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <h1 class="feed-title tag tag-info">Módulo 3</h1>
+                    <h3 class="feed-subtitle">Tu Progreso</h3>
+                    <div class="progress" style="height: 20px" id="bar">
+                      <div
+                        class="progress-bar bg-info"
+                        role="progressbar"
+                        aria-valuenow="25"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="max-width: 38%"
+                      >
+                        38%
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="row">
+                      <div class="col">
+                        <div id="circlecontainer"></div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col text-center">
+                        <h3 class="feed-subtitle">
+                          Pr ogreso General del Curso
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Content Wrapper END -->
+
+          <!-- Footer START -->
+          <footer class="content-footer"></footer>
+          <!-- Footer END -->
+        </div>
+        <!-- Page Container END -->
+      </div>
+    </div>
+
+    <!-- build:js assets/js/vendor.js -->
+    <!-- plugins js -->
+    <script src="../../assets/vendors/jquery/dist/jquery.min.js"></script>
+    <script src="../../assets/js/recycled/navigationbar.js"></script>
+    <script src="../../assets/vendors/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../../assets/vendors/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../../assets/vendors/PACE/pace.min.js"></script>
+    <script src="../../assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+
+    <!-- Progress plugins -->
+    <script src="../../assets/js/progressbar.js"></script>
+    <script src="../../assets/js/progress-circle.js"></script>
+
+    <!-- endbuild -->
+
+    <!-- build:js assets/js/app.min.js -->
+    <!-- core js -->
+    <script src="../../assets/js/app.js"></script>
+    <script src="../../assets/js/recycled/navigationbar.js"></script>
+    <script src="../../assets/js/progress/url-script.js"></script>
+
+    <!-- endbuild -->
+
+    <!-- Insert your dependencies here -->
+  </body>
+</html>

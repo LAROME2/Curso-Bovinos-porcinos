@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no"
+    />
+    <title>Módulo 3: Typography | CVA - Centro Virtual de Aprendizaje</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../../assets/images/logo/favicon.png" />
+
+    <!-- plugins css -->
+    <link
+      rel="stylesheet"
+      href="../../assets/vendors/bootstrap/dist/css/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../assets/vendors/PACE/themes/blue/pace-theme-minimal.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../assets/vendors/perfect-scrollbar/css/perfect-scrollbar.min.css"
+    />
+
+    <!-- page plugins css -->
+
+    <!-- core css -->
+    <link href="../../assets/css/ei-icon.css" rel="stylesheet" />
+    <link href="../../assets/css/themify-icons.css" rel="stylesheet" />
+    <link href="../../assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../../assets/css/animate.min.css" rel="stylesheet" />
+    <link href="../../assets/css/app.css" rel="stylesheet" />
+    <link href="../../assets/css/progress.css" rel="stylesheet" />
+    <link href="../../assets/css/progress-circle.css" rel="stylesheet" />
+  </head>
+
+  <body class="header-info side-nav-dark">
+    <div class="app">
+      <div class="layout">
+        <!-- Side Nav START -->
+        <div class="side-nav" id="sideNav"></div>
+        <!-- Side Nav END -->
+
+        <!-- Page Container START -->
+        <div class="page-container">
+          <!-- Header START -->
+          <div class="header navbar"></div>
+          <!-- Header END -->
+
+          <!-- theme configurator START -->
+          <div class="theme-configurator">
+            <div class="configurator-wrapper">
+              <div class="config-header">
+                <h4 class="config-title">Config Panel</h4>
+                <button class="config-close">
+                  <i class="ti-close"></i>
+                </button>
+              </div>
+              <div class="config-body">
+                <div class="mrg-btm-30">
+                  <p class="lead font-weight-normal">Header Color</p>
+                  <div class="theme-colors header-default">
+                    <input type="radio" id="header-default" name="theme" />
+                    <label for="header-default"></label>
+                  </div>
+                  <div class="theme-colors header-primary">
+                    <input
+                      type="radio"
+                      class="primary"
+                      id="header-primary"
+                      name="theme"
+                    />
+                    <label for="header-primary"></label>
+                  </div>
+                  <div class="theme-colors header-info">
+                    <input type="radio" id="header-info" name="theme" />
+                    <label for="header-info"></label>
+                  </div>
+                  <div class="theme-colors header-success">
+                    <input type="radio" id="header-success" name="theme" />
+                    <label for="header-success"></label>
+                  </div>
+                  <div class="theme-colors header-danger">
+                    <input type="radio" id="header-danger" name="theme" />
+                    <label for="header-danger"></label>
+                  </div>
+                  <div class="theme-colors header-dark">
+                    <input type="radio" id="header-dark" name="theme" />
+                    <label for="header-dark"></label>
+                  </div>
+                </div>
+                <div class="mrg-btm-30">
+                  <p class="lead font-weight-normal">Sidebar Color</p>
+                  <div class="theme-colors sidenav-default">
+                    <input type="radio" id="sidenav-default" name="sidenav" />
+                    <label for="sidenav-default"></label>
+                  </div>
+                  <div class="theme-colors side-nav-dark">
+                    <input type="radio" id="side-nav-dark" name="sidenav" />
+                    <label for="side-nav-dark"></label>
+                  </div>
+                </div>
+                <div class="mrg-btm-30">
+                  <p class="lead font-weight-normal no-mrg-btm">RTL</p>
+                  <div
+                    class="toggle-checkbox checkbox-inline toggle-sm mrg-top-10"
+                  >
+                    <input type="checkbox" name="rtl-toogle" id="rtl-toogle" />
+                    <label for="rtl-toogle"></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- theme configurator END -->
+
+          <!-- Theme Toggle Button START -->
+          <button class="theme-toggle btn btn-rounded btn-icon">
+            <i class="ti-palette"></i>
+          </button>
+          <!-- Theme Toggle Button END -->
+          <!-- Content Wrapper START -->
+          <div class="main-content">
+            <div class="container-fluid">
+              <div class="page-title">
+                <h4>Typography</h4>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="card">
+                    <div class="card-block">
+                      <div class="row">
+                        <div class="col-md-4">
+                          <h4 class="card-title">
+                            <span>Headings</span>
+                          </h4>
+                          <p>
+                            All HTML headings, <code>&lt;h1&gt;</code> through
+                            <code>&lt;h6&gt;</code>, are available.
+                          </p>
+                          <div class="mrg-top-50">
+                            <h1>h1. Heading 1</h1>
+                            <h2>h2. Heading 2</h2>
+                            <h3>h3. Heading 3</h3>
+                            <h4>h4. Heading 4</h4>
+                            <h5>h5. Heading 5</h5>
+                            <h6>h5. Heading 6</h6>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <h4 class="card-title">
+                            <span>Sub Headings</span>
+                          </h4>
+                          <p>
+                            Use <code>&lt;small&gt;</code> HTML tag to create a
+                            lighter text
+                          </p>
+                          <div class="mrg-top-50">
+                            <h1>h1. Heading 1 <small>Sub-heading</small></h1>
+                            <h2>h2. Heading 2 <small>Sub-heading</small></h2>
+                            <h3>h3. Heading 3 <small>Sub-heading</small></h3>
+                            <h4>h4. Heading 4 <small>Sub-heading</small></h4>
+                            <h5>h5. Heading 5 <small>Sub-heading</small></h5>
+                            <h6>h5. Heading 6 <small>Sub-heading</small></h6>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mrg-top-50">
+                        <div class="col-md-5">
+                          <h4 class="card-title">Paragraph Text</h4>
+                          <p>
+                            The ship is almost finished. Two or Three more
+                            things and we're in great shape. The sooner the
+                            better. Something's wrong here. No one has seen or
+                            knows anything about Threepio. He's been gone too
+                            long to have gotten lost. Relax
+                          </p>
+                          <p>
+                            I'll talk to Lando and see what I can find out. I
+                            don't trust Lando. Well, I don't trust him, either.
+                            But he is my friend. Besides, we'll soon be gone.
+                            And then you're as good as gone, aren't you?
+                          </p>
+                          <p>
+                            Put Captain Solo in the cargo hold. Artoo! Artoo!
+                            Where have you been? Turn around, you wooly...!
+                            Hurry, hurry!
+                          </p>
+                        </div>
+                        <div class="col-md-5 mr-auto ml-auto">
+                          <h4 class="card-title">Paragraph Lead</h4>
+                          <p class="mrg-btm-40">
+                            Use <code>.lead</code> class to make your pharagraph
+                            outstanding
+                          </p>
+                          <p class="lead">
+                            Excuse me, sir. Might I inqu-... Yes, sir? Do you
+                            know where Commander Skywalker is?
+                          </p>
+                        </div>
+                      </div>
+                      <div class="row mrg-top-50">
+                        <div class="col-md-3">
+                          <h4 class="card-title">Adresses</h4>
+                          <address class="mrg-top-30">
+                            <b class="text-dark">Google, Inc.</b>
+                            <br />71 Pilgrim Avenue <br />Chevy Chase, MD 20815
+                            <br />
+                            <abbr class="text-dark" title="Phone">Phone:</abbr
+                            >(123) 456-7890
+                          </address>
+                          <address>
+                            <b class="text-dark">Nate Leong</b>
+                            <br />
+                            <a href="mailto:#">nate.leong@themenate.com</a>
+                          </address>
+                        </div>
+                        <div class="col-md-8">
+                          <h4 class="card-title">Inline text</h4>
+                          <div class="row mrg-top-30">
+                            <div class="col-md-4">
+                              <div class="mrg-btm-30">
+                                <h5>Highlight</h5>
+                                <p>
+                                  Oh, I told you it was
+                                  <mark>dangerous</mark> here.
+                                </p>
+                              </div>
+                              <div class="mrg-btm-30">
+                                <h5>Underline</h5>
+                                <p>
+                                  <u>Oh, I told you it was dangerous here.</u>
+                                </p>
+                              </div>
+                              <div class="mrg-btm-30">
+                                <h5>Slash</h5>
+                                <p>
+                                  <del
+                                    >Oh, I told you it was dangerous here.</del
+                                  >
+                                </p>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="mrg-btm-30">
+                                <h5>Small</h5>
+                                <p>
+                                  <small
+                                    >Oh, I told you it was dangerous
+                                    here.</small
+                                  >
+                                </p>
+                              </div>
+                              <div class="mrg-btm-30">
+                                <h5>Lowercase</h5>
+                                <p class="text-lowercase">
+                                  Oh, I told you it was dangerous here.
+                                </p>
+                              </div>
+                              <div class="mrg-btm-30">
+                                <h5>Uppercase</h5>
+                                <p class="text-uppercase">
+                                  Oh, I told you it was dangerous here.
+                                </p>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="mrg-btm-30">
+                                <h5>Capitalized</h5>
+                                <p class="text-capitalize">
+                                  Oh, I told you it was dangerous here.
+                                </p>
+                              </div>
+                              <div class="mrg-btm-30">
+                                <h5>Bold</h5>
+                                <p>
+                                  Oh, I told you it was <b>dangerous</b> here.
+                                </p>
+                              </div>
+                              <div class="mrg-btm-30">
+                                <h5>Italic</h5>
+                                <p>
+                                  Oh, I told you it was <i>dangerous</i> here.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr />
+                      <div class="row mrg-top-70">
+                        <div class="mr-auto ml-auto col-md-4">
+                          <h4>Text Color</h4>
+                          <p class="mrg-top-20">
+                            Bootstrap has some contextual classes that can be
+                            used to provide "meaning through colors". Convey
+                            meaning through color with a handful of emphasis
+                            utility classes. These may also be applied to links
+                            and will darken on hover just like our default link
+                            styles.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="row mrg-top-50 mrg-btm-70">
+                        <div class="mr-auto ml-auto col-md-8">
+                          <div class="row">
+                            <div class="col-md-3">
+                              <div class="card">
+                                <div class="padding-20 bg-dark"></div>
+                                <div class="padding-10">
+                                  <p class="no-mrg-btm">.text-dark</p>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="padding-20 bg-success"></div>
+                                <div class="padding-10">
+                                  <p class="no-mrg-btm">.text-success</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="card">
+                                <div class="padding-20 bg-gray"></div>
+                                <div class="padding-10">
+                                  <p class="no-mrg-btm">.text-gray</p>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="padding-20 bg-info"></div>
+                                <div class="padding-10">
+                                  <p class="no-mrg-btm">.text-info</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="card">
+                                <div
+                                  class="padding-20 bg-white border bottom"
+                                ></div>
+                                <div class="padding-10">
+                                  <p class="no-mrg-btm">.text-white</p>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="padding-20 bg-warning"></div>
+                                <div class="padding-10">
+                                  <p class="no-mrg-btm">.text-warning</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="card">
+                                <div class="padding-20 bg-primary"></div>
+                                <div class="padding-10">
+                                  <p class="no-mrg-btm">.text-primary</p>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="padding-20 bg-danger"></div>
+                                <div class="padding-10">
+                                  <p class="no-mrg-btm">.text-danger</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr />
+                      <div class="row mrg-top-50">
+                        <div class="mr-auto ml-auto col-md-4">
+                          <h4>Quote</h4>
+                          <blockquote class="mrg-top-20">
+                            <p>
+                              Irresponsibility is part of the pleasure of all
+                              art; it is the part the schools cannot recognize.
+                            </p>
+                            <small>James Joyce</small>
+                          </blockquote>
+                        </div>
+                      </div>
+                      <div class="row mrg-top-50">
+                        <div class="col-md-3">
+                          <h4 class="card-title mrg-btm-30">List Unordered</h4>
+                          <ul>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Consectetur adipiscing elit</li>
+                            <li>Integer molestie lorem at massa</li>
+                            <li>Facilisis in pretium nisl aliquet</li>
+                            <li>Nulla volutpat aliquam velit</li>
+                          </ul>
+                        </div>
+                        <div class="col-md-3">
+                          <h4 class="card-title mrg-btm-30">List Ordered</h4>
+                          <ol>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Consectetur adipiscing elit</li>
+                            <li>Integer molestie lorem at massa</li>
+                            <li>Facilisis in pretium nisl aliquet</li>
+                            <li>Nulla volutpat aliquam velit</li>
+                          </ol>
+                        </div>
+                        <div class="col-md-3">
+                          <h4 class="card-title mrg-btm-30">List Unstyled</h4>
+                          <ul class="list-unstyled">
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Consectetur adipiscing elit</li>
+                            <li>Integer molestie lorem at massa</li>
+                            <li>Facilisis in pretium nisl aliquet</li>
+                            <li>Nulla volutpat aliquam velit</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="row mrg-top-50">
+                        <div class="col-md-3">
+                          <h4 class="card-title mrg-btm-30">List Dash</h4>
+                          <ul class="list tick">
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Consectetur adipiscing elit</li>
+                            <li>Integer molestie lorem at massa</li>
+                            <li>Facilisis in pretium nisl aliquet</li>
+                            <li>Nulla volutpat aliquam velit</li>
+                          </ul>
+                        </div>
+                        <div class="col-md-3">
+                          <h4 class="card-title mrg-btm-30">List Dash</h4>
+                          <ul class="list dash">
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Consectetur adipiscing elit</li>
+                            <li>Integer molestie lorem at massa</li>
+                            <li>Facilisis in pretium nisl aliquet</li>
+                            <li>Nulla volutpat aliquam velit</li>
+                          </ul>
+                        </div>
+                        <div class="col-md-3">
+                          <h4 class="card-title mrg-btm-30">List Star</h4>
+                          <ul class="list star">
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Consectetur adipiscing elit</li>
+                            <li>Integer molestie lorem at massa</li>
+                            <li>Facilisis in pretium nisl aliquet</li>
+                            <li>Nulla volutpat aliquam velit</li>
+                          </ul>
+                        </div>
+                        <div class="col-md-3">
+                          <h4 class="card-title mrg-btm-30">
+                            List Lower Alpha
+                          </h4>
+                          <ul class="list lower-alpha">
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Consectetur adipiscing elit</li>
+                            <li>Integer molestie lorem at massa</li>
+                            <li>Facilisis in pretium nisl aliquet</li>
+                            <li>Nulla volutpat aliquam velit</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="row mrg-top-50">
+                        <div class="col-md-3">
+                          <h4 class="card-title mrg-btm-30">
+                            Bullet Color Primary
+                          </h4>
+                          <ul class="list tick bullet-primary">
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Consectetur adipiscing elit</li>
+                            <li>Integer molestie lorem at massa</li>
+                            <li>Facilisis in pretium nisl aliquet</li>
+                            <li>Nulla volutpat aliquam velit</li>
+                          </ul>
+                        </div>
+                        <div class="col-md-3">
+                          <h4 class="card-title mrg-btm-30">
+                            Bullet Color Success
+                          </h4>
+                          <ul class="list dash bullet-success">
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Consectetur adipiscing elit</li>
+                            <li>Integer molestie lorem at massa</li>
+                            <li>Facilisis in pretium nisl aliquet</li>
+                            <li>Nulla volutpat aliquam velit</li>
+                          </ul>
+                        </div>
+                        <div class="col-md-3">
+                          <h4 class="card-title mrg-btm-30">
+                            Bullet Color Info
+                          </h4>
+                          <ul class="list star bullet-info">
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Consectetur adipiscing elit</li>
+                            <li>Integer molestie lorem at massa</li>
+                            <li>Facilisis in pretium nisl aliquet</li>
+                            <li>Nulla volutpat aliquam velit</li>
+                          </ul>
+                        </div>
+                        <div class="col-md-3">
+                          <h4 class="card-title mrg-btm-30">
+                            Bullet Color Warning
+                          </h4>
+                          <ul class="list bullet bullet-warning">
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Consectetur adipiscing elit</li>
+                            <li>Integer molestie lorem at massa</li>
+                            <li>Facilisis in pretium nisl aliquet</li>
+                            <li>Nulla volutpat aliquam velit</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="row mrg-top-50">
+                        <div class="col-md-3">
+                          <h4 class="card-title mrg-btm-30">
+                            Bullet Color Danger
+                          </h4>
+                          <ul class="list arrow bullet-danger">
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Consectetur adipiscing elit</li>
+                            <li>Integer molestie lorem at massa</li>
+                            <li>Facilisis in pretium nisl aliquet</li>
+                            <li>Nulla volutpat aliquam velit</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Botones de avance entre páginas-->
+              <div class="row mrg-btm-20">
+                <div class="col text-center">
+                  <div class="btn-group"></div>
+                </div>
+              </div>
+              <!--Widgets de avance de módulo y general-->
+              <div class="card widget-feed">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <h1 class="feed-title tag tag-info">Módulo 3</h1>
+                    <h3 class="feed-subtitle">Tu Progreso</h3>
+                    <div class="progress" style="height: 20px" id="bar">
+                      <div
+                        class="progress-bar bg-info"
+                        role="progressbar"
+                        aria-valuenow="25"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="max-width: 38%"
+                      >
+                        38%
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="row">
+                      <div class="col">
+                        <div id="circlecontainer"></div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col text-center">
+                        <h3 class="feed-subtitle">
+                          Pr ogreso General del Curso
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Content Wrapper END -->
+
+          <!-- Footer START -->
+          <footer class="content-footer"></footer>
+          <!-- Footer END -->
+        </div>
+        <!-- Page Container END -->
+      </div>
+    </div>
+
+    <!-- build:js assets/js/vendor.js -->
+    <!-- plugins js -->
+    <script src="../../assets/vendors/jquery/dist/jquery.min.js"></script>
+    <script src="../../assets/js/recycled/navigationbar.js"></script>
+    <script src="../../assets/vendors/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../../assets/vendors/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../../assets/vendors/PACE/pace.min.js"></script>
+    <script src="../../assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+
+    <!-- Progress plugins -->
+    <script src="../../assets/js/progressbar.js"></script>
+    <script src="../../assets/js/progress-circle.js"></script>
+
+    <!-- endbuild -->
+
+    <!-- build:js assets/js/app.min.js -->
+    <!-- core js -->
+    <script src="../../assets/js/app.js"></script>
+    <script src="../../assets/js/recycled/navigationbar.js"></script>
+    <script src="../../assets/js/progress/url-script.js"></script>
+
+    <!-- endbuild -->
+
+    <!-- Insert your dependencies here -->
+  </body>
+</html>

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no"
+    />
+    <title>Temario General | CVA - Centro Virtual de Aprendizaje</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../../assets/images/logo/favicon.png" />
+
+    <!-- plugins css -->
+    <link
+      rel="stylesheet"
+      href="../../assets/vendors/bootstrap/dist/css/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../assets/vendors/PACE/themes/blue/pace-theme-minimal.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../assets/vendors/perfect-scrollbar/css/perfect-scrollbar.min.css"
+    />
+
+    <!-- page plugins css -->
+
+    <!-- core css -->
+    <link href="../../assets/css/ei-icon.css" rel="stylesheet" />
+    <link href="../../assets/css/themify-icons.css" rel="stylesheet" />
+    <link href="../../assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../../assets/css/animate.min.css" rel="stylesheet" />
+    <link href="../../assets/css/app.css" rel="stylesheet" />
+
+    <!-- En caso de tener 3 tarjetas como ejemplo tal descomentar esta seccion -->
+    <!-- 
+    <style>
+    .card{}
+</style> 
+-->
+  </head>
+  <style>
+    title {
+        color: black;
+    }
+    body {
+        margin: 0px;
+    }
+    .carrousel {
+        width: 100%;
+        overflow: scroll;
+        padding: 30px;
+        position: relative;
+    }
+    .carrousel__container {
+        white-space: nowrap;
+        margin: 70px 0px;
+        padding-bottom: 10px;
+    }
+    .carrousel-item {
+        width: 250px;
+        height: 300px;
+        border-radius: 20px;
+        background-color: blueviolet;
+        overflow: hidden;
+        margin-right: 10px;
+        display: inline-block;
+        cursor: pointer;
+        transition: 450ms;
+        transform-origin: center left;
+        position: relative;
+    }
+
+    .carrousel-item:hover ~ .carrousel-item{
+        transform: translate3d(100px, 0, 0);
+    }
+
+    .carrousel__container:hover .carrousel-item {
+        opacity: 0.3;
+    }
+
+    .carrousel__container:hover .carrousel-item:hover {
+        transform: scale(1.5);
+        opacity: 1;
+    }
+    .carrousel-item__img {
+        width: 250px;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .carrousel-item__details {
+        background: linear-gradient(to top, rgba(0,0,0,0.9)0%, rgba(0,0,0,0)100%);
+        font-size: 10px;
+        opacity: 0;
+        transition: 450ms opacity;
+        padding: 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        align-items: flex-end;
+    }
+    .carrousel-item__details:hover {
+        opacity: 1;
+    }
+    .carrousel-item__details--icon {
+        width: 25px;
+        height: 25px;
+    }
+    .carrousel-item__details--title, .carrousel-item__details--subtitle {
+        color: #ffffff;
+    }
+    
+</style>
+  <body class="header-info side-nav-dark">
+    <div class="app">
+      <div class="layout">
+        <!-- Side Nav START -->
+        <div class="side-nav" id="sideNav"></div>
+        <!-- Side Nav END -->
+
+        <!-- Page Container START -->
+        <div class="page-container">
+          <!-- Header START -->
+          <div class="header navbar"></div>
+          <!-- Header END -->
+
+          <!-- Content Wrapper START -->
+          <div class="main-content">
+            <div class="container-fluid px-0 px-sm-3">
+              <!-- Your content goes here -->
+              <div class="card temario">
+                <div class="card-block">
+                  <h1 class="card-title text-center">Temario General</h1>
+                  <div class="alert alert-warning w-100" role="alert">
+                    <b
+                      >Opcionalmente, se puede personalizar el temario con
+                      diferentes formas y diseños. <br />
+                      Ejemplo:
+                      <a
+                        href="https://www.cca.org.mx/CCA_cursos/etica_tics/html/temario/temario.html"
+                        target="_blank"
+                        >Temario de Curso en Ética en las TIC</a
+                      ></b
+                    >
+                  </div>
+                  <div class="row">
+                    <a
+                      href="../../html/modulo1/modulo1-1.html"
+                      class="col-12 col-md-6 col-lg-4 py-2 hvr-float"
+                    >
+                      <div
+                        class="card-category p-3"
+                        style="
+                          background-image: url('../../assets/images/course/temario/web.jpg');
+                          background-position: 45% 55%;
+                        "
+                      >
+                        <div>
+                          Módulo 1 <br />
+                          Conceptos y herramientas
+                        </div>
+                      </div>
+                    </a>
+                    <a
+                      href="../../html/modulo2/act1.html"
+                      class="col-12 col-md-6 col-lg-4 py-2 hvr-float"
+                    >
+                      <div
+                        class="card-category p-3 overlay-dark bg"
+                        style="
+                          background-image: url('../../assets/images/course/temario/biologico.jpg');
+                          background-position: 70% 30%;
+                        "
+                      >
+                        <div>
+                          Módulo 2 <br />
+                          Actividades
+                        </div>
+                      </div>
+                    </a>
+                    <a
+                      href="../../html/modulo3/modulo3-1.html"
+                      class="col-12 col-md-6 col-lg-4 py-2 hvr-float"
+                    >
+                      <div
+                        class="card-category p-3"
+                        style="
+                          background-image: url('../../assets/images/course/temario/bosque.jpg');
+                        "
+                      >
+                        <div>
+                          Módulo 3 <br />
+                          Elementos UI
+                        </div>
+                      </div>
+                    </a>
+                    <a
+                      href="../../recursos-espire/index.html"
+                      class="col-12 col-md-6 py-2 hvr-float"
+                    >
+                      <div
+                        class="card-category p-3"
+                        style="
+                          background-image: url('../../assets/images/course/temario/equipo-proteccion-caidas.jpg');
+                        "
+                      >
+                        <div>
+                          Módulo 4 <br />
+                          Recursos Espire
+                        </div>
+                      </div>
+                    </a>
+                    <a
+                      href="javascript:void(0);"
+                      class="col-12 col-md-12 col-lg-6 py-2 hvr-float"
+                    >
+                      <div
+                        class="card-category p-3"
+                        style="
+                          background-image: url('../../assets/images/course/temario/electricidad.jpg');
+                        "
+                      >
+                        <div>
+                          Módulo 5 <br />
+                          Prácticas
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Content Wrapper END -->
+          <section class="carrousel">
+            <div class="carrousel__container">
+                <div class="carrousel-item">
+                    <img class="carrousel-item__img" src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80" alt="science">
+                    <div class="carrousel-item__details">
+                        <div>
+                            <img class="carrousel-item__details--icon" src="https://raw.githubusercontent.com/teffcode/Platzi-Frontend-Dev/master/assets/play-icon.png" alt="play">
+                            <img class="carrousel-item__details--icon" src="https://raw.githubusercontent.com/teffcode/Platzi-Frontend-Dev/master/assets/plus-icon.png" alt="plus">
+                        </div>
+                        
+                        <p class="carrousel-item__details--subtitle">Módulo 1</p>
+                    </div>
+                </div>
+                <div class="carrousel-item">
+                  <p class="carrousel-item__details--subtitle">Módulo 2</p>
+                </div>
+                <div class="carrousel-item">
+                  <p class="carrousel-item__details--subtitle">Módulo 3</p>
+                </div>
+                <div class="carrousel-item">
+                  <p class="carrousel-item__details--subtitle">Módulo 4</p>
+                </div>
+                <div class="carrousel-item">
+                  <p class="carrousel-item__details--subtitle">Módulo 5</p>
+                </div>
+            </div>
+        </section>
+          <!-- Footer START -->
+          <footer class="content-footer"></footer>
+          <!-- Footer END -->
+        </div>
+        <!-- Page Container END -->
+      </div>
+    </div>
+
+    <!-- build:js assets/js/vendor.js -->
+    <!-- plugins js -->
+    <script src="../../assets/vendors/jquery/dist/jquery.min.js"></script>
+    <script src="../../assets/vendors/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../../assets/vendors/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../../assets/vendors/PACE/pace.min.js"></script>
+    <script src="../../assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+
+    <!-- endbuild -->
+
+    <!-- build:js assets/js/app.min.js -->
+    <!-- core js -->
+    <script src="../../assets/js/app.js"></script>
+    <script src="../../assets/js/recycled/navigationbar.js"></script>
+
+    <!-- endbuild -->
+
+    <!-- Insert your dependencies here -->
+    
+  </body>
+</html>
